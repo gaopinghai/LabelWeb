@@ -1,0 +1,65 @@
+.WebTitle {
+    background-color: #E9EBFE;
+    color: #8470FF;
+    line-height: 50%;
+    padding: 5px;
+}
+
+.WebTitle h1 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.WebTitle h6 {
+    text-align: right;
+    color: black;
+    white-space: pre;
+    margin: 0 auto;
+    padding: 0px 3px 5px 0px;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #CCE8CF;
+    padding: 0px 15px 0px 15px;
+    width: 1280px;
+}
+
+.LabelBox {
+    display: flex;
+}
+
+.ImBox {
+    flex: 3;
+    color: red;
+    text-align: center;
+    background-color: #FAF9DE;
+    padding: 0px 30px 10px 30px;
+}
+
+.Imcanvas {
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+
+.CateBox {
+    flex: 1;
+    color: green;
+    padding: 0px 0px 0px 30px;
+    background-color: #FDE6E0;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    color: blue;
+}
+
+.Label {
+    padding: 0px 0px 20px 0px;
+}
+
+button {
+    padding: 5px;
+    width: 100px;
+}

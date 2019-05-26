@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图像标注工具-网页版</title>
+    <meta name="author" content="ToughMind, gphsmail@163.com">
+    <!--引入外部文件-->
+    <link rel="stylesheet" type="text/css" href="css/labelweb.css">
+    <script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="scripts/main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="https://avatar.csdnimg.cn/D/E/D/1_u013832707.jpg">
+</head>
+<body>
+    <div class="WebTitle">
+        <h1>图像标注工具-网页版</h1>
+        <h6>作者：ToughMind    邮箱：gphsmail@163.com</h6>
+    </div>
+    <div class="LabelBox">
+        <div class="ImBox">
+            <h1>待标注图像</h1>
+            <canvas class="Imcanvas" width="960" height="540">
+                <p>你的浏览器竟然不支持canvas!</p>
+            </canvas>
+            <label for="imgSelector" class='btn btn-success' style="float: left; background-color: #DCDCDC; padding: 2px; width: 100px; color: black; border: 1px solid #C0C0C0;">打开图片路径</label>
+            <input type="file" id="imgSelector" name="imgFile" accept=".jpg, .jpeg, .png" style="width: 0px" webkitdirectory directory multiple>
+            <button id="gotoIm" style="float: right;">转到图片...</button>
+        </div>
+        <div class="CateBox">
+            <h1>类别</h1>
+            <form class="Label">
+                <input type="radio" id="labelInp0" name="label" value="people">
+                <label style="color: #68228B" id="label0" for="labelInp0" class="InputLabel" style="padding-right: 5px">people</label><br>
+                <input type="radio" id="labelInp1" name="label" value="car" checked>
+                <label style="color: #FF82AB" id="label1" for="labelInp1" class="InputLabel">car</label><br>
+                <input type="radio" id="labelInp2" name="label" value="truck">
+                <label style="color: #FF1493" id="label2" for="labelInp2" class="InputLabel" style="padding-right: 5px">truck</label><br>
+                <input type="radio" id="labelInp3" name="label" value="bike">
+                <label style="color: #FF4500" id="label3" for="labelInp3" class="InputLabel">bike</label><br>
+                <input type="radio" id="labelInp4" name="label" value="bus">
+                <label style="color: #00CD00" id="label4" for="labelInp4" class="InputLabel" style="padding-right: 5px">bus</label><br>
+                <input type="radio" id="labelInp5" name="label" value="bird">
+                <label style="color: #DA70D6" id="label5" for="labelInp5" class="InputLabel">bird</label><br>
+                <input type="radio" id="labelInp6" name="label" value="horse">
+                <label style="color: #DEB887" id="label6" for="labelInp6" class="InputLabel" style="padding-right: 5px">horse</label><br>
+                <input type="radio" id="labelInp7" name="label" value="dog">
+                <label style="color: #B23AEE" id="label7" for="labelInp7" class="InputLabel">dog</label><br>
+                <input type="radio" id="labelInp8" name="label" value="cat">
+                <label style="color: #191970" id="label8" for="labelInp8" class="InputLabel" style="padding-right: 5px">cat</label><br>
+                <input type="radio" id="labelInp9" name="label" value="tiger">
+                <label style="color: #00B2EE" id="label9" for="labelInp9" class="InputLabel">tiger</label><br>
+            </form>
+            <button id="boxDone">确认</button><br>
+            <button id="imDone" style="margin-top: 5px;">完成图片标注</button><br>
+            <button id="resetIm" style="margin-top: 30px;">重新标注图片</button><br>
+            <img src="wechat.jpg" width="150" height="210" style="margin: 20px 0px 0px 20px;">
+        </div>
+    </div>
+    
+</body>
+</html>
