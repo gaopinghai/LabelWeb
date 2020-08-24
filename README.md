@@ -9,8 +9,8 @@
 
 ![image](https://github.com/PingHGao/LabelWeb/blob/master/welcome.jpg)
 
-### 重要注意事项
+# 重要注意事项!!!
 1. 使用浏览器（最好是chrome浏览器）打开labelweb.html
-2. 存储图像的文件夹需要与labelweb.html在统一路径
+2. **存储图像的文件夹需要与labelweb.html在同一路径!!!**如果图片数量较多,建议使用软连接而不是简单的复制.
 
 更多信息请参看博客：https://blog.csdn.net/u013832707/article/details/90574441
